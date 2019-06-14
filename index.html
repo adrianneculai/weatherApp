@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vremea</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <!-- <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+
+</head>
+
+<body>
+    <div id="input" class="wraper">
+        <input type="text" id="afisVrm">
+        <button id="vremea">Afiseaza vremea</button>
+        <button id="prognoza">Afiseaza prognoza</button>
+    </div>
+
+    <div id="vremea-acum" class="wraper">
+
+        <h1>Vremea acum</h1><br>
+        <hr>
+
+        <div id="descriere">
+
+            <ul id="descriere-vreme">
+                <li></li>
+                <li>Descriere: </li>
+                <li>Umiditate: </li>
+                <li>Presiune: </li>
+                <li>Temperatura curenta: </li>
+                <li>Minima zilei: </li>
+                <li>Maxima zilei: </li>
+            </ul>
+        </div>
+
+        <div id='map'></div>
+
+
+    </div>
+
+    <div id="vremea-urmatoarele-zile" class="wraper">
+        <h1>Vremea in urmatoarele zile</h1><br>
+        <hr>
+        <div id="wrp1" class="progWrap"></div>
+        <div id="wrp2" class="progWrap"></div>
+        <div id="wrp3" class="progWrap"></div>
+        <div id="wrp4" class="progWrap"></div>
+        <div id="wrp5" class="progWrap"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

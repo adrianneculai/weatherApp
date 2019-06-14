@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(183, 193, 238);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.wraper {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    /* display: block; */
+    overflow: hidden;
+}
+
+input {
+    width: 40%;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+#vremea-acum {
+    height: 600px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    width: 25%;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+li {
+    font-size: 1.1em;
+}
+
+#map {
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 80%;
+    float: left;
+}
+
+#descriere {
+    /* background-color: brown; */
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.progWrap {
+    /* background-color: cadetblue; */
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.center {
+    margin-top: 20px;
+}
+
+.ziua {
+    font-weight: bold;
+    font-size: 15pt;
+    background-color: rgb(183, 193, 238);
+    width: 80%;
+    padding: 2px;
+    display: inline-table;
+
+}
