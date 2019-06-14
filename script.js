@@ -33,6 +33,7 @@ function vremea() {
             lista[4].innerHTML = `Temperatura curenta: <b>${vremeAstazi.main.temp}<sup>o</sup>C</b>`;
             lista[5].innerHTML = `Minima zilei: <b>${vremeAstazi.main.temp_min}<sup>o</sup>C</b>`;
             lista[6].innerHTML = `Maxima zilei: <b>${vremeAstazi.main.temp_max}<sup>o</sup>C</b>`;
+            eraseMap();
             harta(vremeAstazi.coord.lon, vremeAstazi.coord.lat);
         } else {
             alert("date indisponibile");
@@ -82,14 +83,14 @@ function prognoza() {
 
                 if (j == 0) {
 
-                  let  a = 0;
+                    let a = 0;
                     wraper = "wrp1";
                     document.getElementById("wrp1").innerHTML +=
                         ` <div class="ziua"> Ziua: ${progCinci.list[a].dt_txt.substr(8, 2)}/${progCinci.list[a].dt_txt.substr(5, 2)}/${progCinci.list[a].dt_txt.substr(0, 4)}
                         </div>`;
 
                 } else if (j == 1) {
-                   let a = 6;
+                    let a = 6;
                     wraper = "wrp2";
                     document.getElementById("wrp2").innerHTML +=
                         ` <div class="ziua"> Ziua: ${progCinci.list[a].dt_txt.substr(8, 2)}/${progCinci.list[a].dt_txt.substr(5, 2)}/${progCinci.list[a].dt_txt.substr(0, 4)}
@@ -155,4 +156,9 @@ function erase() {
     document.getElementById("wrp3").innerHTML = "";
     document.getElementById("wrp4").innerHTML = "";
     document.getElementById("wrp5").innerHTML = "";
+}
+
+
+function eraseMap() {
+    document.getElementById("map").innerHTML = "";
 }
